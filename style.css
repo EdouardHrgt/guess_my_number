@@ -69,6 +69,9 @@ main {
     background-color: var(--bck);
     border: 4px #fff solid;
     margin-bottom: 3rem;
+    color: #EEC13A;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -92,12 +95,17 @@ input[type='number']::-webkit-outer-spin-button {
     background-color: #EEC13A;
 }
 
-.right > p {
+.right .text {
     color: #fff;
     font-size: 1.4rem;
     margin: 1rem;
 }
 
+.displayer {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
 .right .displayer {
     padding-bottom: 2.8rem;
 }
@@ -109,7 +117,7 @@ footer {
 
 
 @media (max-width: 1000px) {
-    .right > p {
+    .right .text {
         font-size: 1rem;
     }
     main {
