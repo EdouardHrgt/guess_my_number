@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+    --bck: rgb(43, 43, 43);
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Press Start 2P', cursive;
+}
+
+body {
+background-color: var(--bck);
+width: 100%;
+margin: auto;
+}
+
+header {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 5rem;
+border-bottom: 7px solid white;
+margin-bottom: 9rem;
+position: relative;
+}
+
+header .interrogation {
+background-color: #fff;
+font-size: 3rem;
+width: 115px;
+height: 85px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+bottom: -42.5px;
+}
+
+header h1 {
+margin-bottom: 2rem;
+color: #EEC13A;
+}
+
+header p {
+color: #fff;
+letter-spacing: 1.5px;
+}
+
+main {
+    width: 80%;
+    min-height: 400px;
+    display: flex;
+    margin: auto;
+}
+
+.left,
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left input {
+    width: 250px;
+    padding: 2rem;
+    background-color: var(--bck);
+    border: 4px #fff solid;
+    margin-bottom: 3rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.left button,
+.restart {
+    width: 250px;
+    padding: 1.5rem;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+    letter-spacing: 1.5px;
+}
+
+.left button:hover,
+.restart:hover {
+    background-color: #EEC13A;
+}
+
+.right > p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.right .displayer {
+    padding-bottom: 2.8rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 1000px) {
+    .right > p {
+        font-size: 1rem;
+    }
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5rem 0;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        margin-bottom: 2rem;
+    }
+    .right .displayer {
+        padding-bottom: 0;
+    }
+}
